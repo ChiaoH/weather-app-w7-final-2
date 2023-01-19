@@ -31,7 +31,7 @@ li {
   font-weight: normal;
   line-height: 22px;
 }
-#description {
+#description:first-letter {
   text-transform: capitalize;
 }
 
