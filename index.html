@@ -45,10 +45,14 @@
           </div>
 
           <div class="row row-3">
-            <div class="col-3">
-              <i class="fa-solid fa-cloud"></i>
+            <div class="col-6">
+              <div class="d-flex weather-temperature align-items-center">
+                <i class="fa-solid fa-cloud"></i>
+                <strong id="cur-temp-nr">2</strong
+                ><span class="units"> °C | <a href="#">°F</a> </span>
+              </div>
             </div>
-            <div class="col-3">2 °C | °F</div>
+
             <div class="col-3">
               <ul>
                 <li>Highest: 2°C</li>
@@ -56,6 +60,7 @@
                 <li>Feels like: -2°C</li>
               </ul>
             </div>
+
             <div class="col-3">
               <ul>
                 <li>Humidity: 89%</li>
@@ -66,7 +71,7 @@
           </div>
         </div>
 
-        <small>
+        <small class="open-source">
           <a href="https://github.com/ChiaoH/weather-app-w7-final"
             >Open-source code
           </a>
