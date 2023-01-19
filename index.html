@@ -16,6 +16,8 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="src/style.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
   </head>
   <body>
     <div class="container">
@@ -23,7 +25,11 @@
         <div class="weather-app">
           <div class="row row-1">
             <div class="col-6">
-              <h1>Stockholm</h1>
+              <h1 id="cityName">Stockholm</h1>
+              <ul>
+                <li>Wednesday 8:00</li>
+                <li id="description">Partly cloudy</li>
+              </ul>
             </div>
             <div class="col-6">
               <input
@@ -36,15 +42,6 @@
           </div>
 
           <div class="row row-2">
-            <div class="col-6">
-              <ul>
-                <li>Wednesday 8:00</li>
-                <li>Partly cloudy</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="row row-3">
             <div class="col-6">
               <div class="d-flex weather-temperature align-items-center">
                 <i class="fa-solid fa-cloud"></i>
@@ -63,8 +60,8 @@
 
             <div class="col-3">
               <ul>
-                <li>Humidity: 89%</li>
-                <li>Wind: 3.09m/s</li>
+                <li>Humidity: <span id="humidity"></span>%</li>
+                <li>Wind: <span id="windSpeed"></span>m/s</li>
                 <li>Sunrise: 06:10</li>
               </ul>
             </div>
