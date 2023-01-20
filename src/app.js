@@ -24,7 +24,6 @@ function formatDate(timestamp) {
 }
 
 function displayCurrentWeather(response) {
-  console.log(response);
   let cityElement = document.querySelector("#cityName");
   let temperatureElement = document.querySelector("#cur-temp-nr");
   let descriptionElement = document.querySelector("#description");
@@ -46,8 +45,21 @@ function displayCurrentWeather(response) {
   iconElement.setAttribute("alt", response.data.weather[0].description);
 }
 
-let apiKey = "b1a8336ff1e05b64da5625e4158fbea3";
-let city = "Stockholm";
-let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+function search(city) {
+  let apiKey = "b1a8336ff1e05b64da5625e4158fbea3";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(displayCurrentWeather);
+}
 
-axios.get(apiUrl).then(displayCurrentWeather);
+function handleSubmit(event) {
+  event.preventDefault();
+  let cityInputElement = document.querySelector("#city-input");
+  search(cityInputElement.value);
+}
+
+search("Stockholm");
+
+let form = document.querySelector("#search-form");
+form.addEventListener("submit", handleSubmit);
+let searchButton = document.querySelector("#search-btn");
+searchButton.addEventListener("click", handleSubmit);
