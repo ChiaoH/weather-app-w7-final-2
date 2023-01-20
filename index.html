@@ -24,21 +24,37 @@
       <div class="weather-app-wrapper">
         <div class="weather-app">
           <div class="row row-1">
-            <div class="col-6">
+            <span class="col-6">
               <h1 id="cityName">Stockholm</h1>
               <ul>
                 <li id="date"></li>
                 <li id="description">Partly cloudy</li>
               </ul>
-            </div>
-            <div class="col-6">
+            </span>
+
+            <span class="col-4">
+              <form id="search-form" style="display: inline !important">
+                <input
+                  type="search"
+                  class="search-box form-controll mr-50"
+                  placeholder="Enter a city..."
+                />
+              </form>
+            </span>
+
+            <span class="col-2">
               <input
-                type="search"
-                class="search-box"
-                placeholder="Enter a city..."
+                type="submit"
+                value="Search"
+                class="btn btn-info btn-sm w-80"
+                id="search-btn"
+                style="
+                  --bs-btn-padding-y: 0.25rem;
+                  --bs-btn-padding-x: 0.5rem;
+                  --bs-btn-font-size: 0.8rem;
+                "
               />
-              <div class="btn btn-info">Search</div>
-            </div>
+            </span>
           </div>
 
           <div class="row row-2">

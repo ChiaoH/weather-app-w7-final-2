@@ -4,7 +4,7 @@ body {
 }
 
 .weather-app-wrapper {
-  max-width: 640px;
+  max-width: 600px;
   margin: 0 auto;
 }
 
@@ -33,6 +33,10 @@ li {
 }
 #description:first-letter {
   text-transform: capitalize;
+}
+
+#search-btn {
+  margin-left: 16px;
 }
 
 .row-2 {
