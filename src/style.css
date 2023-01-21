@@ -1,9 +1,10 @@
 body {
   font-family: "Lato", "Helvetica Neue", "Helvetica", sans-serif;
+  color: #2f4858;
 }
 
 .weather-app-wrapper {
-  max-width: 600px;
+  max-width: 560px;
   margin: 0 auto;
 }
 
@@ -36,6 +37,17 @@ li {
 }
 #description:first-letter {
   text-transform: capitalize;
+}
+
+#city-input {
+  max-width: 200px;
+}
+
+#search-btn {
+  background-color: #9fe084;
+  border: none;
+  color: #2f4858;
+  margin-left: -10px;
 }
 
 .row-2 {
