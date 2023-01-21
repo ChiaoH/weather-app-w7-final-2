@@ -1,5 +1,4 @@
 body {
-  background: #ffdea9;
   font-family: "Lato", "Helvetica Neue", "Helvetica", sans-serif;
 }
 
@@ -13,7 +12,11 @@ body {
   margin-top: 150px;
   border-radius: 10px;
   padding: 26px;
-  background-color: #ffffff;
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgb(255, 200, 124) 0%,
+    rgb(252, 251, 121) 90%
+  );
   margin-bottom: 12px;
 }
 
