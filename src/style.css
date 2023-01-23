@@ -83,3 +83,22 @@ a {
 .units .active:hover {
   text-decoration: none;
 }
+
+.weather-forecast-section {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.weather-forecast-day {
+  font-size: 16px;
+}
+
+.fa-sun {
+  font-size: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.weather-forecast-temperature {
+  font-size: 13px;
+}
