@@ -1,6 +1,7 @@
 body {
   font-family: "Lato", "Helvetica Neue", "Helvetica", sans-serif;
   color: #2f4858;
+  background-color: antiquewhite;
 }
 
 .weather-app-wrapper {
