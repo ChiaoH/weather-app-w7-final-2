@@ -9,8 +9,8 @@ body {
   font-family: "Lato", "Helvetica Neue", "Helvetica", sans-serif;
   color: var(--secondary-color);
   background-image: url(images/background.jpg);
-  background-size: 100%;
-  background-position: center 80%;
+  background-size: 105%;
+  background-position: center 78%;
 }
 
 .weather-app-wrapper {
@@ -24,7 +24,7 @@ body {
   border-radius: 10px;
   padding: 26px;
   margin-bottom: 12px;
-  background-color: var(--tirtiary-color);
+  background-color: #68b3da;
 }
 
 h1 {
